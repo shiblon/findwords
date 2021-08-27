@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	"entrogo.com/findwords/board"
-	"entrogo.com/findwords/index"
+	"github.com/shiblon/findwords/board"
+	"github.com/shiblon/findwords/index"
 )
 
 // Flags
@@ -113,10 +113,10 @@ func (self foundword) String() string {
 	switch self.direction {
 	case RIGHT:
 		return fmt.Sprintf("%s (%d): %d, %d across, %v",
-		self.word, self.score, self.line, self.start, self.blanks)
+			self.word, self.score, self.line, self.start, self.blanks)
 	case DOWN:
 		return fmt.Sprintf("%s (%d): %d, %d down, %v",
-		self.word, self.score, self.start, self.line, self.blanks)
+			self.word, self.score, self.start, self.line, self.blanks)
 	}
 	return fmt.Sprintf("%s (%d): direction? line %d, start %d, %v",
 		self.word, self.score, self.line, self.start, self.blanks)

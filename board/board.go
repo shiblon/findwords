@@ -1,4 +1,4 @@
-package board // import "entrogo.com/findwords/board"
+package board
 
 // TODO:
 // Add case-sensitivity to allow blank tiles to be specified.

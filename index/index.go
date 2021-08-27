@@ -1,4 +1,4 @@
-package index // import "entrogo.com/findwords/index"
+package index
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"entrogo.com/mealy"
+	"github.com/shiblon/mealy"
 )
 
 type MissingLetterConstraint struct {
@@ -59,7 +59,7 @@ func (idx Index) ValidMissingLetters(query string) (allLetters string) {
 		letters[string(w[pos])] = true
 	}
 	ordered := make([]string, 0, len(letters))
-	for k, _ := range letters {
+	for k := range letters {
 		ordered = append(ordered, k)
 	}
 	sort.Strings(ordered)

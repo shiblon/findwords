@@ -1,4 +1,4 @@
-package board // import "entrogo.com/findwords/board"
+package board
 
 import (
 	"fmt"
